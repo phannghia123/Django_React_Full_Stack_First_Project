@@ -5,8 +5,9 @@ import { ACCESS_TOKEN } from "./constants"
 // 2. Nhập biến hằng số (constants) ACCESS_TOKEN từ một file khác.
 //    Biến này chứa khóa (key) dùng để lưu trữ và truy xuất token trong Local Storage.
 
+const apiUrl = "/choreo-apis/django-react-first-projec/backend/v1"
 export const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL
+    baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiUrl
 })
 
 // --- Cấu hình Request Interceptor (Bộ chặn Yêu cầu) ---
