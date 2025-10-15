@@ -1,0 +1,62 @@
+/* CONTAINER: Tối giản, mềm mại và nổi bật hơn */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; // Bỏ đi nếu đã dùng margin: auto */
+    margin: 50px auto;
+    padding: 35px 30px; /* Tăng padding để tạo không gian thoáng hơn */
+    border-radius: 12px; /* Góc bo tròn lớn hơn, mềm mại hơn */
+    
+    /* Box Shadow hiện đại, nhẹ nhàng hơn */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), /* Đổ bóng xa hơn */
+                0 5px 15px rgba(0, 0, 0, 0.05); /* Đổ bóng gần hơn */
+    
+    background-color: #ffffff; /* Thêm nền trắng rõ ràng */
+    max-width: 420px; /* Tăng nhẹ chiều rộng */
+}
+
+/* INPUT: Tăng độ tương phản và thêm hiệu ứng focus */
+.form-input {
+    width: 100%; /* Dùng 100% để input căn đều với button */
+    padding: 14px 15px; /* Tăng chiều cao input */
+    margin: 10px 0;
+    border: 1px solid #e0e0e0; /* Viền sáng màu hơn, tinh tế */
+    border-radius: 8px; /* Bo tròn tương đồng với container */
+    box-sizing: border-box;
+    font-size: 1.05em; /* Tăng kích thước chữ input */
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+/* Hiệu ứng khi focus */
+.form-input:focus {
+    border-color: #007bff; /* Viền xanh nổi bật khi focus */
+    box-shadow: 0 0 0 1px #007bff; /* Thêm hiệu ứng viền sáng (focus ring) */
+    outline: none; /* Loại bỏ outline mặc định */
+}
+
+/* BUTTON: Rõ ràng và có hiệu ứng */
+.form-button {
+    width: 100%; /* Dùng 100% */
+    padding: 14px 10px; /* Tăng chiều cao nút */
+    margin: 25px 0 10px 0; /* Tăng khoảng cách trên và giảm dưới */
+    background-color: #0066ff; /* Màu xanh nổi bật */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Bo tròn tương đồng với input */
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600; /* Làm chữ đậm hơn */
+    letter-spacing: 0.5px; /* Thêm khoảng cách chữ nhẹ */
+    transition: background-color 0.2s ease-in-out, transform 0.1s;
+}
+
+/* Hiệu ứng tương tác: Shadow và Push */
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+.form-button:active {
+    transform: scale(0.99); /* Hiệu ứng nhấn xuống nhẹ */
+}
